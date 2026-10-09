@@ -1,0 +1,31 @@
+{
+  "name": "token-blame",
+  "version": "0.1.0",
+  "description": "Who spent your Claude Code tokens: main conversation vs each subagent type, cache rebuilds and why, and what subagents would cost on Haiku.",
+  "type": "module",
+  "bin": {
+    "token-blame": "bin/token-blame.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "prices.json"
+  ],
+  "scripts": {
+    "test": "node --test test/token-blame.test.js",
+    "demo": "node scripts/make-demo.js && node bin/token-blame.js demo/claude"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "subagents",
+    "token-usage",
+    "prompt-caching",
+    "llm-cost",
+    "haiku",
+    "finops"
+  ],
+  "license": "MIT"
+}
