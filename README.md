@@ -16,7 +16,7 @@ Usage tools tell you *how many* tokens you used. They don't say *who* used them.
 - Per the [Claude Code subagent docs](https://code.claude.com/docs/en/sub-agents), a subagent with no `model` set falls through to the main conversation's model. The built-in `Explore` does the same unless you override it.
 - Resuming a session after the prompt cache has expired writes the whole context into cache again. That cost doesn't show up as a line item anywhere.
 
-When I ran it on my own last 30 days, token-blame reported that subagents made 26% of tokens, **100% of them on Opus**, inherited from the main conversation rather than chosen. It also counted 51 resumes after the cache had expired, each re-writing a median of 238K tokens.
+token-blame answers "who spent it" from your own logs, in one command.
 
 ## Quick start
 
