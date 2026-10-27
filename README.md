@@ -2,6 +2,9 @@
 
 **`git blame` for your Claude Code tokens.** See how much went to the main conversation and how much to each subagent type, which subagents just inherited your expensive model, and how many tokens went into cache rebuilds (and why). Then see what those subagents would have cost on Haiku 5.5.
 
+<!-- agent-preflight -->
+> **Also a Claude Code skill.** `token-blame` is part of [agent-preflight](https://github.com/thinx-pro/agent-preflight), 16 offline checks for coding agents: `/plugin marketplace add thinx-pro/agent-preflight` then `/plugin install token-blame@agent-preflight`, and ask Claude in plain words.
+
 ![node >=18](https://img.shields.io/badge/node-%3E%3D18-3c873a) ![zero dependencies](https://img.shields.io/badge/dependencies-0-blue) ![local only](https://img.shields.io/badge/data-stays%20local-informational) ![license MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ![token-blame output on the bundled synthetic demo](assets/demo.png)
