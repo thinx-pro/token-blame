@@ -93,9 +93,3 @@ npm run demo             # generate the synthetic demo logs and run on them
 MIT
 
 If this told you something about your own usage you didn't know, a ⭐ helps other people find it.
-
----
-
-### 中文说明
-
-**token-blame**：给 Claude Code 的 token 做「归因」。它把用量拆成主会话和各类子 Agent（Explore、general-purpose、fork、自定义 Agent），标出有多少子 Agent 只是继承了主会话的贵模型，统计缓存重写的次数和原因（空闲超过 TTL、切换模型、压缩、前缀变化），并估算把子 Agent 换成 Haiku 5.5 后能省多少。运行 `npx github:thinx-pro/token-blame` 即可，零依赖，只读本地日志，不联网。金额按 API 标价计算，订阅用户可以把它当作相对权重来看。换模型的估算假设 token 数不变，质量是否够用需要自己验证。
